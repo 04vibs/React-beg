@@ -3,13 +3,23 @@ import './App.css';
 import React,{Component} from 'react';
 import Greet from './components/Greet';
 import Welcome from './components/welcome';
+import Hello  from './components/Hello';
 
 class App extends Component{
   render(){
     return(
       <div className='App'>
-        <Greet/>
-        <Welcome />
+        <Greet name="Prashant" heroName="Batman">
+          This is children one
+        </Greet>
+        <Greet name="clark" heroName="Superman">
+          This is children two
+        </Greet>
+        <Greet name="Diana" heroName="wonder woman">
+          This is children three
+        </Greet>
+        <Welcome name="Prashant" heroName="Batman" />
+        {/* <Hello />  */}
       </div>
     );
   }
