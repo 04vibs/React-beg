@@ -17,13 +17,13 @@ function NameList() {
             skill: 'Angular'
         }
     ]
-    const names = ['Prashant','Rahul','Rohan'];
-    const nameList = names.map(name => <h2>{name}</h2>)
+    // const names = ['Prashant','Rahul','Rohan'];
+    // const nameList = names.map(name => <h2>{name}</h2>)
     //using props for person List
-    const personList = persons.map(person => <Person person={person}/>)
+    const personList = persons.map(person => <Person key={person.id} person={person}/>)
     return (
     <div>
-        {nameList}
+        {/* {nameList} */}
         {personList}
     </div>
   );
